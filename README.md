@@ -21,8 +21,31 @@ Demonstrating Agentic RAG's power with Honkai: Star Rail, this project automates
 - GoogleSearchTool：网络信息搜索
 - IntegrationAgent：多源信息整合
 
+## 回答模式
+
+1. **智能Agent**：AI自动选择最优策略
+2. **仅本地RAG**：仅使用本地知识库
+3. **仅联网搜索**：仅使用Google搜索
+4. **两者结合**：整合两种信息源
+
+## 项目结构
+
+```
+├── final_code.py           # 主程序
+├── star_rail_stories/      # 文档目录
+├── faiss_index/            # 向量数据库
+├── requirements.txt        # 依赖包
+└── README.md              # 说明文档
+```
+
 ## 环境要求
 
 - Python 3.8+
 - Ollama (本地LLM服务)，需要一定的版本才能使用qwen3，可替换为其他模型
 - 必需的Python包
+
+## 注意事项
+
+- Google搜索需要你自己的API密钥
+- 首次运行需要时间创建向量数据库，如有文档更新需要及时更新向量数据库
+- 确保Ollama服务在 localhost:11434 运行
