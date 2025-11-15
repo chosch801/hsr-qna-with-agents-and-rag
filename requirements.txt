@@ -1,0 +1,6 @@
+langchain==0.3.25
+langchain-community==0.3.23
+faiss-cpu==1.11.0
+requests==2.32.3
+tqdm==4.67.1
+beautifulsoup4==4.12.3
